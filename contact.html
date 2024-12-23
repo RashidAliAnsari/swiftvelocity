@@ -9,6 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS (Animate On Scroll Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -16,6 +19,14 @@
     </style>
   </head>
   <body class="bg-white text-gray-800">
+    <script>
+      // Initialize AOS for animations
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
       <div
@@ -43,6 +54,17 @@
         >
       </div>
     </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-r from-orange-600 to-yellow-500 h-[500px] flex items-center justify-center text-white"
+      data-aos="fade-up"
+    >
+      <div class="text-center">
+        <h2 class="text-4xl font-extrabold mb-4">Get in Touch</h2>
+        <p class="text-lg">We’d love to hear from you. Contact us today!</p>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="py-16 bg-gray-100">

@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Swift Velocity</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Poppins) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS (Animate On Scroll Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -16,13 +25,21 @@
     </style>
   </head>
   <body class="bg-white text-gray-800">
+    <script>
+      // Initialize AOS for animations
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4"
       >
         <h1 class="text-2xl font-bold text-gray-800">Swift Velocity</h1>
-        <nav class="space-x-6">
+        <nav class="hidden md:flex space-x-6">
           <a href="index.html" class="text-gray-600 hover:text-orange-500"
             >Home</a
           >
@@ -38,26 +55,145 @@
         </nav>
         <a
           href="contact.html"
-          class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+          class="hidden md:inline-block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
           >Get in Touch</a
         >
+        <!-- Hamburger Menu -->
+        <div class="block md:hidden cursor-pointer" onclick="toggleMenu()">
+          <div class="w-6 h-0.5 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-0.5 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-0.5 bg-gray-600"></div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden absolute top-full left-0 w-full bg-white shadow-md"
+      >
+        <nav class="flex flex-col space-y-4 p-4">
+          <a href="index.html" class="text-gray-600 hover:text-orange-500"
+            >Home</a
+          >
+          <a href="services.html" class="text-gray-600 hover:text-orange-500"
+            >Services</a
+          >
+          <a href="about.html" class="text-gray-600 hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="contact.html" class="text-gray-600 hover:text-orange-500"
+            >Contact</a
+          >
+        </nav>
       </div>
     </header>
 
-    <!-- About Us Section -->
-    <section class="py-16 bg-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8">
-          About Swift Velocity
-        </h2>
-        <p class="text-gray-600 mb-8">
-          Swift Velocity is committed to delivering top-notch IT solutions with
-          innovation, dedication, and expertise. Our vision is to empower
-          businesses through technology, enabling them to achieve their goals
-          seamlessly.
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-r from-orange-500 to-red-500 h-[500px] flex items-center justify-center text-white"
+      data-aos="fade-up"
+    >
+      <div class="text-center">
+        <h2 class="text-4xl font-extrabold mb-4">About Swift Velocity</h2>
+        <p class="text-lg">
+          Empowering businesses through cutting-edge IT solutions and
+          innovation.
         </p>
       </div>
     </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Who We Are</h2>
+        <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          Swift Velocity is a team of dedicated IT professionals committed to
+          delivering top-notch solutions. We aim to empower businesses through
+          innovative technology and a deep understanding of our clients’ goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Mission & Vision Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Our Mission & Vision
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mission -->
+          <div
+            class="bg-gray-100 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-2 transform text-center"
+          >
+            <h3 class="text-xl font-semibold text-orange-500 mb-4">
+              Our Mission
+            </h3>
+            <p class="text-gray-600">
+              To deliver innovative, scalable, and reliable technology solutions
+              that empower businesses to achieve their goals.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div
+            class="bg-gray-100 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-2 transform text-center"
+          >
+            <h3 class="text-xl font-semibold text-orange-500 mb-4">
+              Our Vision
+            </h3>
+            <p class="text-gray-600">
+              To become a global leader in IT services by continuously exceeding
+              client expectations and driving digital transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <!-- <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Meet Our Team
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Team Member"
+              class="w-24 h-24 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-bold text-gray-700">John Doe</h3>
+            <p class="text-sm text-gray-600">CEO & Founder</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Team Member"
+              class="w-24 h-24 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-bold text-gray-700">Jane Smith</h3>
+            <p class="text-sm text-gray-600">CTO</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Team Member"
+              class="w-24 h-24 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-bold text-gray-700">Emily Johnson</h3>
+            <p class="text-sm text-gray-600">Lead Developer</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Team Member"
+              class="w-24 h-24 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-bold text-gray-700">Michael Brown</h3>
+            <p class="text-sm text-gray-600">UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
@@ -70,5 +206,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
