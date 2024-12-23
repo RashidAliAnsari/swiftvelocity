@@ -51,26 +51,71 @@
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4"
       >
+        <!-- Logo -->
         <h1 class="text-2xl font-bold text-gray-800">Swift Velocity</h1>
-        <nav class="space-x-6">
-          <a href="index.html" class="text-gray-600 hover:text-orange-500"
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobileMenuButton"
+          class="lg:hidden text-gray-800 hover:text-orange-500 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav
+          id="navLinks"
+          class="hidden lg:flex space-x-6 lg:space-y-0 lg:items-center lg:static lg:bg-transparent bg-white fixed top-16 left-0 w-full lg:w-auto flex-col lg:flex-row lg:shadow-none shadow-lg px-6 lg:px-0 py-4 lg:py-0 z-40"
+        >
+          <a
+            href="index.html"
+            class="text-gray-600 hover:text-orange-500 lg:py-0 py-2"
             >Home</a
           >
-          <a href="services.html" class="text-gray-600 hover:text-orange-500"
+          <a
+            href="services.html"
+            class="text-gray-600 hover:text-orange-500 lg:py-0 py-2"
             >Services</a
           >
-          <a href="about.html" class="text-gray-600 hover:text-orange-500"
+          <a
+            href="about.html"
+            class="text-gray-600 hover:text-orange-500 lg:py-0 py-2"
             >About Us</a
           >
-          <a href="contact.html" class="text-gray-600 hover:text-orange-500"
+          <a
+            href="contact.html"
+            class="text-gray-600 hover:text-orange-500 lg:py-0 py-2"
             >Contact</a
           >
+          <!-- Get in Touch Button (Visible only on Mobile) -->
+          <a
+            href="contact.html"
+            class="lg:hidden bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 mt-4"
+          >
+            Get in Touch
+          </a>
         </nav>
+
+        <!-- Get in Touch Button (Visible only on Desktop) -->
         <a
           href="contact.html"
-          class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
-          >Get in Touch</a
+          class="hidden lg:inline-block bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
         >
+          Get in Touch
+        </a>
       </div>
     </header>
 
@@ -581,6 +626,14 @@
             slidesPerView: 3,
           },
         },
+      });
+
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+      const navLinks = document.getElementById("navLinks");
+
+      mobileMenuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
       });
     </script>
   </body>
