@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Velocity</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate On Scroll Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Tippy.js (Tooltips) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <style>
+      /* Ensure consistent font family */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4"
+      >
+        <h1 class="text-2xl font-bold text-gray-800">Swift Velocity</h1>
+        <nav class="space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-orange-500"
+            >Home</a
+          >
+          <a href="services.html" class="text-gray-600 hover:text-orange-500"
+            >Services</a
+          >
+          <a href="about.html" class="text-gray-600 hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="contact.html" class="text-gray-600 hover:text-orange-500"
+            >Contact</a
+          >
+        </nav>
+        <a
+          href="contact.html"
+          class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+          data-tippy-content="Contact us to discuss your project!"
+          >Get in Touch</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative" data-aos="fade-up">
+      <img
+        src="./assets/hero3.webp"
+        alt="Banner Image"
+        class="w-full h-[500px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-orange-600 bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-white mb-4">
+            Empowering Your Digital Journey 🚀
+          </h2>
+          <p class="text-lg text-white mb-8">
+            Swift Velocity delivers cutting-edge IT solutions tailored for your
+            business growth.
+          </p>
+          <a
+            href="services.html"
+            class="bg-white text-orange-500 px-6 py-3 rounded font-semibold hover:bg-gray-100"
+            data-tippy-content="Explore our services!"
+            >Explore Our Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div data-aos="fade-right">
+            <h3
+              class="text-4xl font-extrabold text-orange-500"
+              data-tippy-content="100+ successful projects delivered!"
+            >
+              100+
+            </h3>
+            <p class="text-gray-600">Projects Completed</p>
+          </div>
+          <div data-aos="fade-up">
+            <h3
+              class="text-4xl font-extrabold text-orange-500"
+              data-tippy-content="7+ years of excellence in IT services!"
+            >
+              7+
+            </h3>
+            <p class="text-gray-600">Years of Experience</p>
+          </div>
+          <div data-aos="fade-left">
+            <h3
+              class="text-4xl font-extrabold text-orange-500"
+              data-tippy-content="50+ satisfied clients worldwide!"
+            >
+              50+
+            </h3>
+            <p class="text-gray-600">Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Why Choose Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="flip-left">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              <span class="inline-block text-orange-500 mb-2"> 🌟 </span>
+              Innovative Solutions
+            </h3>
+            <p class="text-gray-600">
+              - Integration of cutting-edge technologies like AI and cloud
+              computing.
+              <br />- Continuous optimization to enhance user experience.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="flip-up">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              <span class="inline-block text-orange-500 mb-2"> 🎯 </span>
+              Tailored Services
+            </h3>
+            <p class="text-gray-600">
+              - Customized web and mobile solutions tailored to your needs.
+              <br />- Scalability ensured for growing businesses.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="flip-right">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              <span class="inline-block text-orange-500 mb-2"> 💼 </span>
+              Dedicated Support
+            </h3>
+            <p class="text-gray-600">
+              - 24/7 support and prompt resolution of issues.
+              <br />- Regular updates and maintenance for seamless performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">
+          What Our Clients Say
+        </h2>
+        <!-- Carousel container -->
+        <div class="relative">
+          <!-- Carousel content -->
+          <div
+            class="carousel flex gap-6 overflow-hidden items-center"
+            id="carouselContent"
+          >
+            <!-- Review 1 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Rashid recently completed another project for us, and once
+                again, he exceeded all expectations. His technical skills and
+                deep understanding of the project requirements allowed him to
+                deliver a solution that was both efficient and effective."
+              </p>
+              <p class="text-sm font-semibold text-gray-700">- cloudablenet</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Rashid really made this work his own and exceeded our
+                expectations. I will recommend anyone looking for Laravel expert
+                to use this guy. Great work thank you Rashid Team Auto."
+              </p>
+              <p class="text-sm font-semibold text-gray-700">
+                - mother00712345
+              </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Rashid was very proactive in identifying issues with our site
+                and providing detailed documentation on all the problems. I
+                highly recommend him!"
+              </p>
+              <p class="text-sm font-semibold text-gray-700">- salilw</p>
+            </div>
+
+            <!-- Review 4 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "I am a professional Java software developer, not highly skilled
+                in PHP. I hired Rashid to help me take over a site which was
+                developed by someone else. He was unfailingly polite and
+                professional and helped me get to the target much quicker and
+                easier than I would have been able to do by myself."
+              </p>
+              <p class="text-sm font-semibold text-gray-700">- jarom_smith</p>
+            </div>
+
+            <!-- Review 5 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Did a great job updating the program which he also originally
+                helped create."
+              </p>
+              <p class="text-sm font-semibold text-gray-700">- dtartaglia</p>
+            </div>
+
+            <!-- Review 6 -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-md min-w-[300px] flex flex-col justify-between"
+              data-aos="zoom-in"
+            >
+              <p class="text-gray-600 italic mb-4">
+                "Have been working with him for so long, always a pleasure"
+              </p>
+              <p class="text-sm font-semibold text-gray-700">- vrukshampspl</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section
+      class="bg-orange-500 text-white py-12 text-center"
+      data-aos="fade-in"
+    >
+      <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+      <p class="mb-6">
+        Let Swift Velocity help you achieve your goals with cutting-edge IT
+        solutions.
+      </p>
+      <a
+        href="contact.html"
+        class="bg-white text-orange-500 px-6 py-3 rounded font-semibold hover:bg-gray-100"
+        data-tippy-content="Let's connect to discuss your next project!"
+        >Contact Us Today</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p>&copy; 2024 Swift Velocity. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-orange-500">Facebook</a>
+          <a href="#" class="text-gray-400 hover:text-orange-500">Twitter</a>
+          <a href="#" class="text-gray-400 hover:text-orange-500">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Run the carousel smoothly
+      const carouselContent = document.getElementById("carouselContent");
+      let scrollPosition = 0;
+      const scrollStep = 0.5;
+      const scrollInterval = 16;
+
+      function scrollCarousel() {
+        scrollPosition += scrollStep;
+        if (scrollPosition >= carouselContent.scrollWidth / 2) {
+          scrollPosition = 0;
+        }
+        carouselContent.scrollLeft = scrollPosition;
+      }
+
+      setInterval(scrollCarousel, scrollInterval);
+
+      // Initialize AOS for animations
+      AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Ensure animations run only once
+      });
+
+      // Initialize Tippy.js after the DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        tippy("[data-tippy-content]", {
+          animation: "scale", // Animation style for the tooltip
+          theme: "light", // Light theme for the tooltip
+          delay: [100, 50], // Delay for showing/hiding
+          placement: "top", // Tooltip position
+        });
+      });
+    </script>
+  </body>
+</html>

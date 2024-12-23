@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Swift Velocity</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate On Scroll Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Add Font Awesome in the <head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <script>
+      // Initialize AOS for animations
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4"
+      >
+        <h1 class="text-2xl font-bold text-gray-800">Swift Velocity</h1>
+        <nav class="space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-orange-500"
+            >Home</a
+          >
+          <a href="services.html" class="text-gray-600 hover:text-orange-500"
+            >Services</a
+          >
+          <a href="about.html" class="text-gray-600 hover:text-orange-500"
+            >About Us</a
+          >
+          <a href="contact.html" class="text-gray-600 hover:text-orange-500"
+            >Contact</a
+          >
+        </nav>
+        <a
+          href="contact.html"
+          class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+          >Get in Touch</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative" data-aos="fade-up">
+      <div
+        class="relative w-full h-[500px] bg-gradient-to-r from-orange-400 to-orange-600"
+      >
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-white"
+        >
+          <h2 class="text-4xl font-extrabold mb-4">Our Expertise</h2>
+          <p class="text-lg mb-6">
+            Empowering businesses with scalable and innovative IT solutions.
+          </p>
+          <a
+            href="#services"
+            class="bg-white text-orange-500 px-6 py-3 rounded font-semibold hover:bg-gray-100"
+          >
+            Discover Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Why Choose Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <!-- Widget 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Full-Stack Development
+            </h3>
+            <p class="text-gray-600">
+              Robust solutions with Laravel, Vue.js, and seamless API
+              integrations.
+            </p>
+          </div>
+
+          <!-- Widget 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Mobile Development
+            </h3>
+            <p class="text-gray-600">
+              Native and cross-platform apps for iOS and Android, delivering
+              great performance.
+            </p>
+          </div>
+
+          <!-- Widget 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Cloud & QA Solutions
+            </h3>
+            <p class="text-gray-600">
+              Reliable AWS, Azure integrations, and robust quality assurance
+              practices.
+            </p>
+          </div>
+
+          <!-- Widget 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              API Integrations
+            </h3>
+            <p class="text-gray-600">
+              Building seamless and secure integrations with third-party
+              services to enhance functionality and efficiency.
+            </p>
+          </div>
+
+          <!-- Widget 5 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              DevOps & CI/CD
+            </h3>
+            <p class="text-gray-600">
+              Automating deployments and streamlining operations with pipelines.
+            </p>
+          </div>
+
+          <!-- Widget 6 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-aos="zoom-in"
+          >
+            <div class="text-orange-500 text-5xl mb-4">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              UI/UX Design
+            </h3>
+            <p class="text-gray-600">
+              Creating intuitive designs that enhance user experience and
+              engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies We Use -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Technologies We Use
+        </h2>
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center"
+        >
+          <div class="text-center">
+            <i class="fab fa-laravel text-orange-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Laravel</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-react text-blue-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">React</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-node text-green-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Node.js</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-aws text-yellow-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">AWS</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-vuejs text-green-400 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Vue.js</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-database text-indigo-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">MySQL</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-android text-green-700 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Android</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-apple text-gray-800 text-5xl"></i>
+            <p class="mt-2 text-gray-600">iOS</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-js-square text-yellow-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">JavaScript</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-cloud text-blue-400 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Cloud Solutions</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-bootstrap text-purple-600 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Bootstrap</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-pencil-ruler text-pink-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">UI/UX Design</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind CSS"
+              class="h-12 w-12 mx-auto"
+            />
+            <p class="mt-2 text-gray-600">Tailwind CSS</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              class="w-12 h-12 mx-auto"
+              alt="TypeScript"
+            />
+            <p class="mt-2 text-gray-600">TypeScript</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+              class="w-12 h-12 mx-auto"
+              alt="Go"
+            />
+            <p class="mt-2 text-gray-600">Go</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-stripe text-5xl"></i>
+            <p class="mt-2 text-gray-600">Stripe</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-paypal text-blue-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">PayPal</p>
+          </div>
+          <!-- <div class="text-center">
+            <i class="fab fa-razorpay text-blue-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Razorpay</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-twilio text-blue-500 text-5xl"></i>
+            <p class="mt-2 text-gray-600">Twilio</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured products Section -->
+
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Featured Projects
+        </h2>
+        <!-- Swiper Container -->
+        <div class="swiper-container featured-projects-swiper">
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div
+              class="swiper-slide group relative rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="./assets/indymandi-fullpage.jpeg"
+                alt="E-commerce Platform"
+                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4"
+              >
+                <h3 class="text-lg font-bold mb-2">E-commerce Platform</h3>
+                <p class="text-sm mb-4">
+                  A scalable platform enabling seamless shopping experiences.
+                </p>
+                <a
+                  href="https://indymandi.com/"
+                  target="_blank"
+                  class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="swiper-slide group relative rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="./assets/peektrack-dashboard.jpeg"
+                alt="Time Tracking System"
+                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4"
+              >
+                <h3 class="text-lg font-bold mb-2">Time Tracking System</h3>
+                <p class="text-sm mb-4">
+                  Efficient tracking and reporting for employee tasks.
+                </p>
+                <a
+                  href="https://peektrack.com/"
+                  target="_blank"
+                  class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="swiper-slide group relative rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="./assets/ihms-homepage-section.jpeg"
+                alt="Hotel Management System"
+                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4"
+              >
+                <h3 class="text-lg font-bold mb-2">Hotel Management System</h3>
+                <p class="text-sm mb-4">
+                  Streamlined operations with booking and invoicing tools.
+                </p>
+                <a
+                  href="https://www.ihms.com.pk/"
+                  target="_blank"
+                  class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="swiper-slide group relative rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="./assets/autotrader-fullpage.jpeg"
+                alt="Auto Trader Platform"
+                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4"
+              >
+                <h3 class="text-lg font-bold mb-2">Auto Trader Platform</h3>
+                <p class="text-sm mb-4">
+                  A robust platform for trading vehicles efficiently and
+                  securely.
+                </p>
+                <a
+                  href="https://www.autotrader.com.gh/"
+                  target="_blank"
+                  class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div
+              class="swiper-slide group relative rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="./assets/heynibble-fullpage.jpeg"
+                alt="Freelancing Platform"
+                class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-white text-center p-4"
+              >
+                <h3 class="text-lg font-bold mb-2">Freelancing Platform</h3>
+                <p class="text-sm mb-4">
+                  A robust platform connecting freelancers with clients
+                  worldwide.
+                </p>
+                <a
+                  href="https://heynibble.com/"
+                  target="_blank"
+                  class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <!-- <div
+            class="swiper-button-prev bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-orange-600 transition duration-300"
+          ></div>
+          <div
+            class="swiper-button-next bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-orange-600 transition duration-300"
+          ></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
+          Success Stories
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Story 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fas fa-shopping-cart text-orange-500 text-4xl mr-4"></i>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Retail Transformation
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Enabled a scalable e-commerce platform and mobile app to enhance
+              operational efficiency, increasing productivity by 40% and
+              delivering a seamless online shopping experience.
+            </p>
+          </div>
+
+          <!-- Story 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fas fa-briefcase text-orange-500 text-4xl mr-4"></i>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Freelancing Ecosystem
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Built a freelancing platform integrating real-time collaboration
+              tools and secure payment gateways, connecting users worldwide and
+              enabling efficient project management.
+            </p>
+          </div>
+
+          <!-- Story 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fas fa-hotel text-orange-500 text-4xl mr-4"></i>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Hospitality Innovations
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Revolutionized hotel operations with an integrated booking and CRM
+              system, improving efficiency by 30% and enhancing guest
+              satisfaction scores significantly.
+            </p>
+          </div>
+
+          <!-- Story 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div class="flex items-center mb-4">
+              <i class="fas fa-clock text-orange-500 text-4xl mr-4"></i>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Time Tracking Excellence
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Designed an efficient Employee Tracking System that streamlined
+              timekeeping and scheduling, increasing productivity and ensuring
+              seamless task management for businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section
+      class="bg-orange-500 text-white py-12 text-center"
+      data-aos="fade-in"
+    >
+      <h2 class="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
+      <p class="mb-6">
+        Reach out today to discuss your project and achieve your business goals.
+      </p>
+      <a
+        href="contact.html"
+        class="bg-white text-orange-500 px-6 py-3 rounded font-semibold hover:bg-gray-100"
+        >Contact Us Now</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p>&copy; 2024 Swift Velocity. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-orange-500">Facebook</a>
+          <a href="#" class="text-gray-400 hover:text-orange-500">Twitter</a>
+          <a href="#" class="text-gray-400 hover:text-orange-500">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".featured-projects-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".featured-projects-swiper .swiper-button-next",
+          prevEl: ".featured-projects-swiper .swiper-button-prev",
+        },
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+          1440: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
